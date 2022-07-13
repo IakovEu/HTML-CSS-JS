@@ -1,0 +1,23 @@
+.papa {display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 300px 250px;
+grid-column-gap: 30px;
+grid-row-gap: 20px;
+}
+
+.papa div { 
+background-color: lightseagreen;
+border: 2px solid black;
+border-radius: 5px;
+padding: 20px 15px;
+font-size: large;
+font-family: cursive;
+color:wheat;
+}
+
+.a1:hover {background-color: yellow;}
+.a2:hover {background-color: red;}
+.a3:hover {background-color: black;}
+.a4:hover {background-color: orange;}
+.a5:hover {background-color: purple;}
+.a6:hover {background-color: green;}

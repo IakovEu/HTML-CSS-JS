@@ -1,0 +1,45 @@
+body {
+font-size: 20px;
+line-height: 1.5;
+font-family: fantasy;
+margin: 0;
+background-color: slateblue;
+overflow-y: hidden;
+}
+
+.tabs {
+max-width: 500px;
+margin: 200px auto;
+}
+
+.nav-all {
+    display: flex;
+}
+
+.nav {
+font-size: 35px;
+background-color: black;
+border: 2px solid white;
+color: white;
+width: 200px;
+cursor: pointer;
+height: 60px;
+margin-bottom: 20px;
+}
+
+.nav:hover {
+background-color: grey;    
+}
+
+.nav.active {
+color: rgb(245, 124, 142);
+background-color: grey;
+}
+
+.tabs-content {
+display: none;
+}
+
+.tabs-content.active {
+    display: block;
+    }

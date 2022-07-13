@@ -1,0 +1,44 @@
+.main-1 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.main-2 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.main-1 div {
+    margin: 20px;
+    padding: 10px;
+    border: 15px solid silver;
+    border-radius: 10px;
+}
+
+.main-2 div {
+    padding: 20px;
+    border: 10px solid yellowgreen;
+    border-radius: 8px;
+}
+
+.a1 {
+    flex: 3;
+    order: 2;
+}
+
+.a2 {
+    flex: 1;
+    order: 3;
+}
+
+.a3 {
+    flex: 1;
+    order: 1;
+}
+
+.abc {
+    width: 20%;
+}

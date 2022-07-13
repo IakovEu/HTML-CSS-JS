@@ -1,0 +1,46 @@
+.a1 {
+    color: pink;
+    background: green;
+    width: 500px;
+    border: 20px dashed black;
+    font-size: 35px;
+    font-family: 'Times new roman';
+    border-radius: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+
+}
+
+
+
+.a2 {
+    color: red;
+    background: yellow;
+    border: 20px solid black;
+    border-radius: 30px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 10px 10px blue;
+    font-size: 50px;
+    word-spacing: 20px;
+    margin-left: 900px;
+    right: 50px;
+    width: 500px;
+    cursor: pointer;
+    box-shadow: 0px 0px 100px black;
+}
+
+.a2:hover {
+    background: orange;
+    color: white;
+}
+
+.a1::before {
+    content: "Трениров04ка";
+    display: inline-block;
+    color: black;
+}
