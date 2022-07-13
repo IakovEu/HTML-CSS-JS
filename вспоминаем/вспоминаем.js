@@ -67,22 +67,64 @@ console.log(question); */
 // alert(i);
 // }\
 
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const q1 = prompt("Один из последних просмотренных фильмов?", ""),
+//       q2 = +prompt("На сколько вы его оцениваете?",""),
+//       q3 = prompt("Один из последних просмотренных фильмов?", ""),
+//       q4 = +prompt("На сколько вы его оцениваете?","");
 
-const q1 = prompt("Один из последних просмотренных фильмов?", ""),
-      q2 = +prompt("На сколько вы его оцениваете?",""),
-      q3 = prompt("Один из последних просмотренных фильмов?", ""),
-      q4 = +prompt("На сколько вы его оцениваете?","");
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-personalMovieDB.movies[q1] = q2;
-personalMovieDB.movies[q3] = q4;
+// personalMovieDB.movies[q1] = q2;
+// personalMovieDB.movies[q3] = q4;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB); 
+//       ~запись двух ответов через обращение к массиву через квадратные скобки (первый ответ : второй ответ)~
+
+// if (6 === 5) {
+//     alert("NO!");
+// } else{
+//     console.log("UFF");
+// }
+
+// let qq = 51;
+
+// if (qq == 50){
+//     console.log("UFF"); 
+// } else if (qq > 400){
+//     console.log("OOOPS");
+// } else {
+//     console.log("all right");
+// }
+
+// ~условие через иф~
+
+// num = 10;
+// (num == 20) ? (console.log("YYYYEEEEESSSS")) : (console.log("NNNNNOOOOOOO"));
+
+// ~тернарный оператор (после вопроса если да, после двоеточия если нет)~
+
+// num = 11;
+
+// switch (num){
+//    case 5:
+//     console.log("NO");
+//     break;
+//     case 10:
+//         console.log("NOO");
+//         break;
+//         case 11: 
+//         confirm("are u sure?");
+//         break;
+//         default:
+//             console.log("relax");
+// }
+// ~вариант записи условия через свич кейсы (идет проверка на строгое равенство)~
+
