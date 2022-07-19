@@ -3,7 +3,7 @@ function test(bet) {
         return "ty lox";
     } else if (bet > 1) {
         return " ty krasava";
-    };
+    }
 }
 console.log(test(10));
 
@@ -416,11 +416,11 @@ text += string.indexOf("m");
 
 console.log(text);
 
-/*
-var btnn = document.querySelector(".btn");
-btnn.addEventListener('click', function()
-{alert("You pressed the button")});
-*/
+
+// var btnn = document.querySelector(".btn");
+// btnn.addEventListener('click', function()
+// {alert("You pressed the button");});
+
 
 
 /*
