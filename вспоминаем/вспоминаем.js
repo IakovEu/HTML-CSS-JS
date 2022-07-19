@@ -237,3 +237,43 @@ console.log(question); */
 //         }
 //     }
 // }
+
+// const arrayOfNumbers = [];
+// for (let i = 5; i < 11; i++) {
+//     arrayOfNumbers[i - 5] = i;
+// }
+// console.log(arrayOfNumbers);
+//             ~заполнение массива цифрами от 5 до 10~
+
+// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+
+// for (i = 0; i < 2; i++) { // ~переменная итератор задана с 0, далее прописываю сколько раз сработает цикл~
+//     const q1 = prompt("Один из последних просмотренных фильмов?", ""),
+//         q2 = +prompt("На сколько вы его оцениваете?", "");
+//     if (q1 != null && q2 != null && q1 != "" && q2 != "" && q1.length < 50) {         
+//         personalMovieDB.movies[q1] = q2;
+//     } else {
+//         console.log("mistake");
+//         i--;                          // ~когда условие не выполняется откатываем на 1 вопрос назад~
+//     }
+// }
+// // ~записываю условие,чтобы нельзя было нажать отмена или оставить пустую строку, а также длина строки должна быть не более 50 символов~
+
+// if(personalMovieDB.count < 10){
+//     console.log("malovato druzhok");
+// } else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30 ){
+// console.log("Normas tak");
+// } else if (personalMovieDB.count >= 30){
+// console.log("idi pogulyai");
+// } else {console.log("Oshibo4ka");
+// }
+// // ~записываю условие для первого значения объекта personalMovieDB~
+// console.log(personalMovieDB);
