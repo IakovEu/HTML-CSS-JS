@@ -303,3 +303,9 @@ console.log(question); */
 
 // var a = (a, b) =>{return a + b};    //~стрелочная функция~
 // console.log(a(2,2));
+
+
+let a = function (a,b){
+return(a+b);
+};
+console.log(a(2,5))
