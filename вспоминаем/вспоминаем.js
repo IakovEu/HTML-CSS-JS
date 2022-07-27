@@ -232,7 +232,7 @@ console.log(question); */
 //     for (let j = 0; j < 3; j++) {
 //         console.log(`Это второй ${j}`);
 //         for(let k = 0; k < 3; k++){
-//             if(k === 2){break metka;}       //~метка позволяет обратиться из самого вложенного файла в главный~
+//             if(k === 2){break metka;}       // ~метка позволяет обратиться из самого вложенного файла в главный~
 //             console.log(`Это третий ${k}`);
 //         }
 //     }
@@ -296,16 +296,69 @@ console.log(question); */
 
 // function ret (){
 //     let num = 40;
-//     return(num);            // ~ретурн может также вернуть значение переменной заданной в функции~
+//     return(num);                   // ~ретурн может также вернуть значение переменной заданной в функции~
 // }
 // let check = ret()
 // console.log(check);
 
-// var a = (a, b) =>{return a + b};    //~стрелочная функция~
+// var a = (a, b) =>{return a + b};          //~стрелочная функция~
 // console.log(a(2,2));
 
+// function multiply (amount){
+// console.log(amount * 20);
+// }
+// multiply(10);
 
-let a = function (a,b){
-return(a+b);
-};
-console.log(a(2,5))
+// let FirstNumber = 10;
+// let SecondNumber = 20;
+
+// let counter = function(curr, anotherValue){ 
+// console.log(curr * anotherValue);                  // ~вместо аргумент можно подствить любое значение и переменную~
+// };
+// counter(5,SecondNumber);
+
+// const a = 2;
+// const b = 3;
+
+// let withRet = function (number1,number2){
+// return number1 * number2;                         // ~ретурн возвращает значение для дальнейшего использования, например в других функциях~
+// };
+
+// let withoutRet = function(functionBefore){
+// console.log(functionBefore * a);
+// };
+
+// let result = withRet(10,b);                      // ~можно создать дополнительную переменную, чтобы не избежать вложенности~
+
+// withoutRet(result);
+
+// function checkCycle(a){                                   
+// for(let i = 0; i < 10; i++){
+// a++;
+// console.log(a);
+// if (a === 11) return;               // ~ретурн прекращает выполнение функции из любое её области, после ретурна функция не читается~
+// }
+// }
+// checkCycle(2);
+
+
+
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//             str += num * i;
+//             // Тут без черточек в конце
+//         } else {
+//             str += num * i + "---";
+//         }
+//     }
+//     return str; 
+// }
+// console.log(getMathResult(7, 5));                       // ~прогрессия прописанного  в логе числа~
+
