@@ -362,3 +362,41 @@ console.log(question); */
 // }
 // console.log(getMathResult(7, 5));                       // ~прогрессия прописанного  в логе числа~
 
+//---------------------------------------------------------------------------------------------------------------------------------
+
+// let smth = "qwerty";
+// let anoth = [1, 2, 3, 4, 5]; 
+
+// console.log(smth.length);            // ~у строки всего одно свойство, измеряет длину строки~
+// console.log(anoth.length);
+// console.log(smth[2]);                // ~через индекс можно обратиться к букве строки~
+
+// let smth = {};   
+
+// console.dir(smth);                   // ~изначально рассматривает как объект~
+// console.log(smth);
+
+// let smth = "boobies";
+
+// console.log(smth.toUpperCase());         // ~это один из методов строки, обращаться через точку(у методов круглые скобки)~
+
+// let smth = " BooBs";
+
+// console.log(smth.toLowerCase());            // ~методы меняют вывод текста в консоль но не меняют его исходное значение~
+
+// var notSmth = "qwerty zxc yafitz";
+
+// console.log(notSmth.indexOf("tz"));            // ~метод находящий индекс с которого начинается введенный элемент (считаются как в массиве)~
+
+// const test = "YAPiPI ssss LLL";
+
+// console.log(test.slice(0,9));                       // ~через указанные индексы вырезаем только нужную часть строки~
+
+// const N = 3.5;
+
+// console.log(Math.round(N));             // ~методы чисел можно прописывать через Math~
+
+// const check = "44.5sdkmkxc";
+
+// console.log(parseInt(check));             // ~позволяет преобразовать строку в число и достать целое число~
+// console.log(parseFloat(check));         // ~позволяет преобразовать строку в число и достать не целое число~
