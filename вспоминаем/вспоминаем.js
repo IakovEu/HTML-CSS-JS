@@ -400,3 +400,66 @@ console.log(question); */
 
 // console.log(parseInt(check));             // ~позволяет преобразовать строку в число и достать целое число~
 // console.log(parseFloat(check));         // ~позволяет преобразовать строку в число и достать не целое число~
+//---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// let numberOfFilms;
+
+// function idk() {
+//     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+//     while (numberOfFilms == null || numberOfFilms == "" || isNaN(numberOfFilms)) { //~ изНан - метод проверки, что это не число ~
+//         numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+//     }
+// }
+
+// idk();
+
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+
+// let ForDbMov = function () {
+//     for (i = 0; i < 2; i++) {
+//         const q1 = prompt("Один из последних просмотренных фильмов?", ""),
+//             q2 = +prompt("На сколько вы его оцениваете?", "");
+//         if (q1 != null && q2 != null && q1 != "" && q2 != "" && q1.length < 50) {
+//             personalMovieDB.movies[q1] = q2;
+//         } else {
+//             console.log("mistake");
+//             i--;
+//         }
+//     }
+// };
+// ForDbMov();
+
+// let ForDbCount = function () {
+//     if (personalMovieDB.count < 10) {
+//         console.log("malovato druzhok");
+//     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//         console.log("Normas tak");
+//     } else if (personalMovieDB.count >= 30) {
+//         console.log("idi pogulyai");
+//     } else {
+//         console.log("Oshibo4ka");
+//     }
+// };
+// ForDbCount();
+
+// let OnlyCheck = function (xyz) {
+//     if (xyz === false) {
+//         console.log(personalMovieDB);
+//     }
+// };
+// OnlyCheck(personalMovieDB.privat);
+
+// let For3quest = function () {
+//     for (i = 1; i < 4; i++) {
+//         let a = prompt(`Ваш любимый жанр под номером ${i}`);
+//         personalMovieDB.genres[i - 1] = a;                         // ~ ай минус 1 потому что начали не с 0 ~
+//     }
+// };  
+// For3quest();
