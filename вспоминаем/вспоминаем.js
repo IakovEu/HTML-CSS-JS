@@ -407,7 +407,7 @@ console.log(question); */
 // function idk() {
 //     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-//     while (numberOfFilms == null || numberOfFilms == "" || isNaN(numberOfFilms)) { //~ изНан - метод проверки, что это не число ~
+//     while (numberOfFilms == null || numberOfFilms == "" || isNaN(numberOfFilms)) {     //~ изНан - метод проверки, что это не число ~
 //         numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 //     }
 // }
@@ -463,3 +463,44 @@ console.log(question); */
 //     }
 // };  
 // For3quest();
+
+
+// let kub = function(abc){
+// let obiemAndPloshad = `Объем куба: ${abc*abc*abc}, площадь всей поверхности: ${6 * abc * abc}`;
+// if (typeof(abc) !== 'number' || abc < 0 || !Number.isInteger(abc)){
+// return("При вычислении произошла ошибка");
+// }
+// return obiemAndPloshad;
+// };  
+// console.log(kub(5));
+
+// let train = function (placeNum){
+
+
+// if (isNaN(placeNum) || placeNum < 0 || !Number.isInteger(placeNum)){       // ~ Намберизинтеджер - метод проверки на целое число~
+//     return "Ошибка. Проверьте правильность введенного номера места";
+// } 
+// else if (placeNum === 0 || placeNum > 36){
+//     return "Таких мест в вагоне не существует";
+// }
+// else if(placeNum > 0 && placeNum <= 4){
+//     return 1;
+// } else if (placeNum >= 5 && placeNum <= 8){
+//     return 2;
+// } else if (placeNum >= 9 && placeNum <= 12){
+//     return 3;
+// } else if (placeNum >= 13 && placeNum <= 16){
+//     return 4;
+// } else if (placeNum >= 17 && placeNum <= 20){
+//     return 5;
+// } else if (placeNum >= 21 && placeNum <= 24){
+//     return 6;
+// } else if (placeNum >= 25 && placeNum <= 28){
+//     return 7;
+// } else if (placeNum >= 29 && placeNum <= 32){
+//     return 8;
+// } else if (placeNum >= 33 && placeNum <= 36){
+//     return 9 ;
+// }    
+// };
+// console.log(train(1.17));
