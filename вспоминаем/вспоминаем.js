@@ -504,3 +504,45 @@ console.log(question); */
 // }    
 // };
 // console.log(train(1.17));
+
+// function GetTimeFromMinutes(min) {
+//     let result1 = Math.floor(min / 60);
+//     let result2 = min % 60;
+
+// if (isNaN(min) || min < 0 || !Number.isInteger(min)){
+// return "Ошибка, проверьте данные";
+// } else if (result1 === 1){
+// return `Это ${result1} час и ${result2} минут`;
+// } else if (result1 === 2 || result1 === 3 || result1 === 4){
+//     return `Это ${result1} часа и ${result2} минут`;
+//     } else {return `Это ${result1} часов и ${result2} минут`;}
+
+// }
+
+// console.log(GetTimeFromMinutes(400));
+
+
+
+let FourNumbers = function (z, x, c, v) {
+
+      if (typeof (z) !== "number" || z === "") {
+        return 0;
+    } else if (typeof (x) !== "number" || x === "") {
+        return 0;
+    } else if (typeof (c) !== "number" || c === "") {
+        return 0;
+    } else if (typeof (v) !== "number" || v === "") {
+        return 0;
+    } else if (z > x && z > c && z > v) {
+        return z;
+    } else if (x > z && x > c && x > v) {
+        return x;
+    } else if (c > z && c > x && c > v) {
+        return c;
+    } else if (v > z && v > x && v > c) {
+        return v;
+    }
+
+};
+
+console.log(FourNumbers(12,233,234,12));
