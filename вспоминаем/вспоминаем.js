@@ -255,14 +255,14 @@ console.log(question); */
 //     privat: false
 // };
 
-// for (i = 0; i < 2; i++) {      // ~переменная итератор задана с 0, далее прописываю сколько раз сработает цикл~
+// for (i = 0; i < 2; i++) {                        // ~переменная итератор задана с 0, далее прописываю сколько раз сработает цикл~
 //     const q1 = prompt("Один из последних просмотренных фильмов?", ""),
 //         q2 = +prompt("На сколько вы его оцениваете?", "");
 //     if (q1 != null && q2 != null && q1 != "" && q2 != "" && q1.length < 50) {         
 //         personalMovieDB.movies[q1] = q2;
 //     } else {
 //         console.log("mistake");
-//         i--;                          // ~когда условие не выполняется откатываем на 1 вопрос назад~
+//         i--;                                    // ~когда условие не выполняется откатываем на 1 вопрос назад~
 //     }
 // }
 // // ~записываю условие,чтобы нельзя было нажать отмена или оставить пустую строку, а также длина строки должна быть не более 50 символов~
@@ -523,26 +523,99 @@ console.log(question); */
 
 
 
-let FourNumbers = function (z, x, c, v) {
+// let FourNumbers = function (z, x, c, v) {
 
-      if (typeof (z) !== "number" || z === "") {
-        return 0;
-    } else if (typeof (x) !== "number" || x === "") {
-        return 0;
-    } else if (typeof (c) !== "number" || c === "") {
-        return 0;
-    } else if (typeof (v) !== "number" || v === "") {
-        return 0;
-    } else if (z > x && z > c && z > v) {
-        return z;
-    } else if (x > z && x > c && x > v) {
-        return x;
-    } else if (c > z && c > x && c > v) {
-        return c;
-    } else if (v > z && v > x && v > c) {
-        return v;
-    }
+//       if (typeof (z) !== "number" || z === "") {
+//         return 0;
+//     } else if (typeof (x) !== "number" || x === "") {
+//         return 0;
+//     } else if (typeof (c) !== "number" || c === "") {
+//         return 0;
+//     } else if (typeof (v) !== "number" || v === "") {
+//         return 0;
+//     } else if (z > x && z > c && z > v) {
+//         return z;
+//     } else if (x > z && x > c && x > v) {
+//         return x;
+//     } else if (c > z && c > x && c > v) {
+//         return c;
+//     } else if (v > z && v > x && v > c) {
+//         return v;
+//     }
 
-};
+// };
 
-console.log(FourNumbers(12,233,234,12));
+// console.log(FourNumbers(12,233,234,12));
+
+// console.log("       let`s check this out      ".trim());       // ~метод трим удаляет пробелы в начале и конце строки~
+
+// let checkSpace = "     abc     ";
+// console.log(checkSpace.trim());
+
+// function first (){
+
+// // ~Какие-то действия~
+
+// setTimeout(function(){
+//     console.log(1);}, 500);                           // ~обратить внимание на порядок выполнения функций~
+// }
+
+// function second (){                                         
+//     console.log(2);
+// }
+
+// first();
+// second();                      
+
+//-------------------------------------------Callback - порядок выполнения функций----------------------------------------------------
+
+// let ForCB = function (action, callback){                 // ~можно использовать функцию как аргумент/параметр~
+// console.log("I`ve done Smth" + " " + action);
+// callback();                                              // ~вызываю функцию из аргумента, чтобы потом подставить вместо нее другую функцию~
+// };
+
+// let anotherOne = function (){    
+// console.log("just check it");
+// };
+
+// ForCB("twice",anotherOne);                               // ~без круглых скобок тк функция уже вызвана~
+
+//-------------------------------------Взаимодействие с объектами-----------------------------------------------------------------
+
+// const options = {
+//     name: "test",
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: "black",
+//         bg: "red"
+//     },
+//     CreateMeth: function(){                               // ~можно создать собственный метод внутри объекта~
+//         console.log("Test Version");             
+//     }
+// };
+
+// options.CreateMeth();
+
+// let {border, bg} = options.colors;
+//                                                 // ~деструктуризация объекта позволяет доставать из него кусочки~
+// console.log(bg);
+
+// console.log(Object.keys(options));               // ~обращение к ключевым значениям объекта~  
+
+// console.log(options["colors"]["bg"]);    //~вариант записи взаимодействия с массивом через квадратные скобки~
+
+// delete options.name;          // ~позволяет удалять свойства из объекта~
+
+// console.log(options);
+
+// for (let key in options) {                         // ~цикл с ин позволяет перебирать объект и равен количеству свойств~
+//     if (typeof (options[key]) === "object") {
+//         for (let key2 in options[key]) {
+// console.log(`Свойство ${key} имеет значение ${options[key][key2]}`); // ~Используем вложенность, чтобы обратиться к объекту внутри объекта~
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     }
+// }
+
