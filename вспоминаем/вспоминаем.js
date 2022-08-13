@@ -1,4 +1,4 @@
-document.write("JS");
+// document.write("JS");
 
 /* let obj = {
 a: 2,
@@ -650,3 +650,92 @@ console.log(question); */
 
 // console.log(arr);   
 
+//-----------------------------------------Передача (копия) по значению-------------------------------------------------------------
+
+// const object = {
+// a: 1,
+// b: 2,
+// };
+
+// let copy = object;             // ~передается ссылка на этот объект (меняешь копию меняешь и объект)~
+
+// copy.a = 5;
+
+// console.log(copy);
+// console.log(object);
+
+// let ForCopy = function (YourObj) {
+//    let CopyObj = {};
+
+//    for (key in YourObj){
+// CopyObj[key] = YourObj[key];                       // ~создается новый объект, изменяя его, старый не меняется~
+//    }
+//    return CopyObj;
+// };
+
+// let testObj = {
+// a: 1,
+// b: 'sdfsd',
+// c: {
+// q: 12,
+// w: 42,
+// e: "qwerty"
+// }
+// };
+
+// let copyOfTestObj = ForCopy(testObj);
+
+// copyOfTestObj.b = "Eshkere";
+
+// console.log(copyOfTestObj);
+// console.log(testObj);
+
+// let add = {
+//     r: "pop",
+//     j: 123,
+//     b: 44
+// };
+
+// let combo = Object.assign(testObj, add);    // ~метод объединяющий объекты / если объединить с пустым объектом то получится клонирование объекта~
+
+// console.log(combo);
+
+// let arr = [1, 23 , 45];
+
+// let arrCopy = arr.slice();     // ~метод поверхностно копирующий весь массив~
+
+// arrCopy[2] = "this is not 45";
+
+// console.log(arr);
+// console.log(arrCopy);
+
+// let FOrSpreadOperator = [1, 2, 3];
+
+// let FOrSpreadOperator2 = [12, 3 , 5];
+
+// let CheckSpread = [...FOrSpreadOperator, ...FOrSpreadOperator2, 12, "Just wanna add smth"];  
+
+// console.log(CheckSpread);              // ~Оператор Спред разложил массив~
+
+// let Enjoy = function (a, d, g){
+// console.log(a, d, g);
+// };
+
+// let ForEnjoy = ['1', '23', "iiiiu"];
+
+// Enjoy(...ForEnjoy);                     
+
+// let FastArr = [1, 2],
+//     NewOne = [...FastArr];          //~с помощью спред оператора можно также создать копию~
+
+// let FastObj = {
+//     a: 1,
+//     b: 2
+// };
+
+// let NewNewOne = {...FastObj};      //~можно также разложить объект и копировать его~
+
+// NewNewOne.a = 100;
+
+// console.log(NewNewOne);
+// console.log(FastObj);
