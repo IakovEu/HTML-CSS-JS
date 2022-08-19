@@ -845,22 +845,123 @@ console.log(question); */
 //     });
 //     return str;
 // }
-    // let BankData = arr.join("\n");                               // ~альтернативное решение~
-    // if (arr.length === 0) {                            
-    //     return "Нет доступных валют";
-    // } else if (missingCurr === 'USD') {
-    //     return `Доступные валюты: \n${BankData.replace(/USD/ig , "")}`;    // ~метод удаления любого элемента из строки~
-    // } else if (missingCurr === 'EUR') {
-    //     return `Доступные валюты: \n${BankData.replace(/EUR/ig , "")}`;    
-    // } else if (missingCurr === 'UAH') {
-    //     return `Доступные валюты: \n${BankData.replace(/UAH/ig , "")}`;
-    // } else if (missingCurr === 'RUB') {
-    //     return `Доступные валюты: \n${BankData.replace(/RUB/ig , "")}`;
-    // } else if (missingCurr === 'CNY') {
-    //     return `Доступные валюты: \n${BankData.replace(/CNY/ig , "")}`;
-    // } else {
-    //     return `Доступные валюты: \n${BankData}`;
-    // }
+// let BankData = arr.join("\n");                               // ~альтернативное решение~
+// if (arr.length === 0) {                            
+//     return "Нет доступных валют";
+// } else if (missingCurr === 'USD') {
+//     return `Доступные валюты: \n${BankData.replace(/USD/ig , "")}`;    // ~метод удаления любого элемента из строки~
+// } else if (missingCurr === 'EUR') {
+//     return `Доступные валюты: \n${BankData.replace(/EUR/ig , "")}`;    
+// } else if (missingCurr === 'UAH') {
+//     return `Доступные валюты: \n${BankData.replace(/UAH/ig , "")}`;
+// } else if (missingCurr === 'RUB') {
+//     return `Доступные валюты: \n${BankData.replace(/RUB/ig , "")}`;
+// } else if (missingCurr === 'CNY') {
+//     return `Доступные валюты: \n${BankData.replace(/CNY/ig , "")}`;
+// } else {
+//     return `Доступные валюты: \n${BankData}`;
+// }
 
 // console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'RUB'));
 
+//--------------------------------------Основы ООП / Прототипы-------------------------------------------------------------------------------
+
+// let str = "something";     // ~Строка~
+// let strOBJ = new String(str);        // ~Объект~
+
+// console.log(typeof(str ));
+// console.log(typeof(strOBJ));
+
+// let commonProperties = {
+// health : 200,
+// jump : 100,
+// SayHello : function(){
+//    console.log("Hello");
+// }
+// };
+
+// let unit = {
+// health : 50
+// };
+
+// // unit.__proto__ = commonProperties;          // ~Присваивание прототипа(устаревший вариант записи)~
+
+// Object.setPrototypeOf(unit, commonProperties);    // ~Современный вариант присваивания прототипа~
+
+// let unit2 = Object.create(commonProperties);       // ~Создание сразу с прототипом~
+
+// console.log(unit.jump); 
+// unit2.SayHello();
+
+
+// const personalMovieDB = {
+//     count: 0,                 // ~Изначально равен 0 для дальнейшей записи в него~
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false,
+//     idk: function () {
+//         personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+//         while (personalMovieDB.count == null || personalMovieDB.count == "" || isNaN(personalMovieDB.count)) {
+//             personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели?", "");
+//         }
+//     },
+//     ForDbMov: function () {
+//         for (i = 0; i < 2; i++) {
+//             const q1 = prompt("Один из последних просмотренных фильмов?", ""),
+//                 q2 = +prompt("На сколько вы его оцениваете?", "");
+//             if (q1 != null && q2 != null && q1 != "" && q2 != "" && q1.length < 50) {
+//                 personalMovieDB.movies[q1] = q2;
+//             } else {
+//                 console.log("mistake");
+//                 i--;
+//             }
+//         }
+//     },
+//     ForDbCount: function () {
+//         if (personalMovieDB.count < 10) {
+//             console.log("malovato druzhok");
+//         } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//             console.log("Normas tak");
+//         } else if (personalMovieDB.count >= 30) {
+//             console.log("idi pogulyai");
+//         } else {
+//             console.log("Oshibo4ka");
+//         }
+//     },
+//     OnlyCheck: function (xyz) {
+//         if (xyz === false) {
+//             console.log(personalMovieDB);
+//         }
+//     },
+//     CheckBool: function () {
+//         if (personalMovieDB.privat) {
+//             personalMovieDB.privat = false;
+//         } else {
+//             personalMovieDB.privat = true;
+//         }   
+//     },
+//     For3quest: function () {
+//         for (i = 1; i < 4; i++) {
+//             let a = prompt(`Ваш любимый жанр под номером ${i}`);
+//             if (a !== null && a !== ""){
+//             personalMovieDB.genres[i - 1] = a;
+//             } else {
+//                 console.log("Davai po Nivoi");
+//                 i--;
+//             }
+            
+//         }
+//         personalMovieDB.genres.forEach((element, num) => {
+//             console.log(`Любимый жанр №${num + 1} - это ${element}`);
+//         });
+//     }
+// };
+
+// personalMovieDB.idk();
+// personalMovieDB.ForDbMov();
+// personalMovieDB.ForDbCount();
+// personalMovieDB.OnlyCheck(personalMovieDB.privat);  
+// personalMovieDB.For3quest();  
+// personalMovieDB.CheckBool();
