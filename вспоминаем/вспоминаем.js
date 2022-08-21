@@ -894,6 +894,7 @@ console.log(question); */
 // unit2.SayHello();
 
 
+
 // const personalMovieDB = {
 //     count: 0,                 // ~Изначально равен 0 для дальнейшей записи в него~
 //     movies: {},
@@ -951,7 +952,7 @@ console.log(question); */
 //                 console.log("Davai po Nivoi");
 //                 i--;
 //             }
-            
+
 //         }
 //         personalMovieDB.genres.forEach((element, num) => {
 //             console.log(`Любимый жанр №${num + 1} - это ${element}`);
@@ -965,3 +966,77 @@ console.log(question); */
 // personalMovieDB.OnlyCheck(personalMovieDB.privat);  
 // personalMovieDB.For3quest();  
 // personalMovieDB.CheckBool();
+
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,   
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10,
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50000
+// };
+
+// function isBudgetEnough(data) {
+// let sq = 0;
+
+// data.shops.forEach(function(element){
+// sq += element.width * element.length;                  // ~ все аналоги сложились между собой и только потом перемножились~
+// });
+// let vol = sq * data.height;
+// let totalPrice = vol * data.moneyPer1m3;
+
+// console.log(totalPrice);
+// if (totalPrice <= data.budget){
+// return "Бюджета достаточно";
+// } else {
+//     return "Бюджета недостаточно";
+// }
+// }
+
+// console.log(isBudgetEnough(shoppingMallData));
+
+//-------------------------------------Динамичекая типизация------------------------------------------------------------------
+
+// console.log(typeof(String(5)));         // ~Превращение в строку~
+
+// let num = 105;
+
+// console.log(`https://vk.com/catalog/${num}`);              
+
+// let fontSize = 10 + "px";                   
+
+// console.log(typeof(Number("5")));   // ~Превращение в число~
+
+// console.log(typeof((+"5px"))); 
+
+// console.log(typeof(parseInt("5sdfsdf")));
+
+// let checker = null;             // ~null, undefind, "", NaN - Эти значения всегда false~  
+
+// if (checker){
+// console.log("Keep going");
+// }                              
+
+// checker = 1;
+
+// if (checker){
+//     console.log("Keep going");  
+//     }
+
+//     console.log(typeof(Boolean("5")));    
+//     console.log(typeof(!! "45"));           // ~Превращает в булиновое значение~
