@@ -34,7 +34,7 @@ adv.forEach(element => {
 
 genre.textContent = "Драма";
 
-bg.style.backgroundImage = "url('img/bg.jpg')";               // ~Указывает ссылку на файл~
+bg.style.backgroundImage = "url('img/bg.jpg')";               // ~Указывает ссылку на файл (обязательно комбинировать кавычки)~
 
 movs.innerHTML = "";
 
