@@ -3,7 +3,7 @@
 const btns = document.querySelectorAll("button"),
     overlay = document.querySelector(".overlay");
 
-// btn[0].onclick = function(){                  // ~Второй вариант добавления события (только одно событие)~ 
+// btns[0].onclick = function(){                  // ~Второй вариант добавления события (только одно событие)~ 
 //     alert('yoy');
 // };       
 
@@ -14,7 +14,7 @@ let forDEL = function(e){                                 // ~Третий ва�
     console.log(e.type);
     // e.target.remove();
     // if (i === 1){
-    //     btn[0].removeEventListener("click", forDEL);
+    //     btns[0].removeEventListener("click", forDEL);
     // i++;
     // }
 };
@@ -29,6 +29,7 @@ ev.preventDefault();                        // ~отменяет дефолтн�
 console.log(ev.target);
 });
 
-btns.forEach(item => {
-    item.addEventListener('click', forDEL, {once: true});          //~опция обработчика (3 аргумент)~
-}); 
+// btns.forEach(item => {
+//     item.addEventListener('click', forDEL, {once: true});          //~опция обработчика (3 аргумент)~
+// }); 
+

@@ -1221,3 +1221,22 @@ console.log(question); */
 // const result = getTotalProgressByRecursion(students);
 
 // console.log(result[0]/result[1]);
+
+// let fuck = function (fact){
+// let ForFac = 0;
+
+// if (!Number.isInteger(fact) || isNaN(fact)){
+//     return "Peredelivay bistro";
+// } else if (fact <= 0){
+//     return 1;
+// } else {
+//     if (ForFac === 1){
+//         return ForFac;
+//     } else {
+//         ForFac += fact * fuck(fact - 1);
+//     }
+// }
+// return ForFac;
+// };
+
+// console.log(fuck(4));      
